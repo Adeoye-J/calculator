@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Jeremiah Bankole | Calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="calculator-content">
+      <div class="calc-header">
+        <h2>Jerry's Calc</h2>
+        <div class="theme-container">
+          <h3>Theme</h3>
+        </div>
+      </div>
+      <div class="calc-input-container">
+        <div class="calc-input-content">
+          <input type="text" class="display" id="display" placeholder="" readonly>
+        </div>
+      </div>
+      <div class="calc-keys-container">
+        <div class="calc-keys">
+          <input type="button" onclick="inputValue(value)" value="7">
+          <input type="button" onclick="inputValue(value)" value="8">
+          <input type="button" onclick="inputValue(value)" value="9">
+          <input type="button" onclick="deleteValue(value)" value="DEL">
+          <input type="button" onclick="inputValue(value)" value="4">
+          <input type="button" onclick="inputValue(value)" value="5">
+          <input type="button" onclick="inputValue(value)" value="6">
+          <input type="button" onclick="inputValue(value)" value="+">
+          <input type="button" onclick="inputValue(value)" value="1">
+          <input type="button" onclick="inputValue(value)" value="2">
+          <input type="button" onclick="inputValue(value)" value="3">
+          <input type="button" onclick="inputValue(value)" value="-">
+          <input type="button" onclick="inputValue(value)" value=".">
+          <input type="button" onclick="inputValue(value)" value="0">
+          <input type="button" onclick="inputValue(value)" value="/">
+          <input type="button" onclick="inputValue('*')" value="x">
+        </div>
+        <div class="reset-compute">
+          <input type="button" onclick="resetValue(value)" value="Reset">
+          <input type="button" onclick="computeValue(value)" value="=">
+        </div>
+        <div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jeremiah Bankole</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
